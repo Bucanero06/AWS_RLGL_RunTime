@@ -11,8 +11,8 @@ from pandas import DataFrame, Timedelta, Series, concat
 from time import perf_counter, sleep
 from vectorbtpro.portfolio.enums import SizeType
 
-from Function_for_Part_1_n_2 import run_RLGL_Optimization
-from Part_1_B import combine_csv_files_dask
+from _utils import combine_csv_files_dask
+from strategy_functions import run_RLGL_Optimization
 
 # Settings
 vbt.settings.set_theme("dark")
