@@ -1,14 +1,9 @@
-from gc import collect
 from glob import glob
 from os import remove
 
 import ray
-from psutil import sensors_temperatures, virtual_memory
-import numpy as np
 import vectorbtpro as vbt
 from numpy import nan, array, arange
-from pandas import DataFrame, Timedelta, Series, concat
-from time import perf_counter, sleep
 from vectorbtpro.portfolio.enums import SizeType
 
 from _utils import combine_csv_files_dask
